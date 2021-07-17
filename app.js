@@ -21,6 +21,14 @@ app.get("/resolution", function (req, res, next) {
   res.json(resolution);
 });
 
+// catch 404 and forward to error handler
+app.use((req, res, next) => {
+  res.status(404).send({
+    status: 404,
+    error: "Not found",
+  });
+});
+
 const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
