@@ -1,0 +1,16 @@
+{
+  "name": "legal-one-backend",
+  "version": "1.0.0",
+  "description": "backend that serve files for legal-one project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "elephantcastle",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
